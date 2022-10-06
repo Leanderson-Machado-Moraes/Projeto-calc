@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10pt"
+        android:gravity="center"
+        android:text="Calculadora"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/txtV1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitulo"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Valor 1"
+        android:textColor="@color/white"
+        android:textSize="27sp" />
+
+    <EditText
+        android:id="@+id/edtV1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtV1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/teal_700"
+        android:gravity="center"
+        android:hint="Informe o valor aqui"
+        android:inputType="numberDecimal"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/rosa" />
+
+    <TextView
+        android:id="@+id/txtV2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtV1"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Valor 2"
+        android:textColor="@color/white"
+        android:textSize="27sp" />
+
+    <EditText
+        android:id="@+id/edtV2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtV2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/teal_700"
+        android:gravity="center"
+        android:hint="Informe o segundo valor aqui"
+        android:inputType="numberDecimal"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/rosa" />
+
+    <Button
+        android:id="@+id/btnSomar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtV2"
+        android:layout_marginLeft="40pt"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40pt"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="somar"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSomar"
+        android:layout_marginLeft="40pt"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40pt"
+        android:padding="5dp"
+        android:text="subtrair"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnMulti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSub"
+        android:layout_marginLeft="40pt"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40pt"
+        android:padding="5dp"
+        android:text="Multiplicar"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnMulti"
+        android:layout_marginLeft="40pt"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40pt"
+        android:padding="5dp"
+        android:text="Dividir"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
